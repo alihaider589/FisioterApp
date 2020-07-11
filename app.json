@@ -1,0 +1,12 @@
+{
+  "name": "FisioterApp",
+  "displayName": "FisioterApp",
+  "expo": {
+    "name": "FisioterApp",
+    "slug": "FisioterApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
