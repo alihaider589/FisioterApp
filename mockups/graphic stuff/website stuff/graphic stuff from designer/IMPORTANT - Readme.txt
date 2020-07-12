@@ -1,0 +1,1 @@
+The original files provided from graphic can be different fromt the final mockups. Please use them if needed but the final restlt must be the same of adobe xd mockup
