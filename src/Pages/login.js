@@ -1,22 +1,36 @@
 import React, { Component } from 'react'
-import ReactNative, { Text, View, StyleSheet, Image, TextInput } from 'react-native'
+import ReactNative, { Text, View, StyleSheet, Image, TextInput,StatusBar,Dimensions } from 'react-native'
 import * as Font from 'expo-font'
+import {Container} from 'native-base'
+import { AntDesign } from '@expo/vector-icons';
+
+
 
 export default class login extends Component {
     async componentDidMount() {
         await Font.loadAsync({
+
             Bold: require('../shared/fonts/Baloo2-Bold.ttf'),
+            
             ExtraBold: require('../shared/fonts/Baloo2-ExtraBold.ttf'),
+            
             Medium: require('../shared/fonts/Baloo2-Medium.ttf'),
+            
             Regular: require('../shared/fonts/Baloo2-Regular.ttf'),
+            
             SemiBold: require('../shared/fonts/Baloo2-SemiBold.ttf')
         })
     }
     render() {
         return (
-            <View style={styles.container}>
+            <Container style={styles.container}>
                 <View style={{ alignSelf: 'center' }}>
-                    <Image source={require('../shared/logos/fisi.png')} style={{ height: 125, width: 125, marginTop: '10%', backgroundColor: 'red' }} />
+                    <Image source={require('../shared/logos/fisi.png')} 
+                    style={{ height: 125,
+                    width: 125,
+                    tintColor:'white',
+                      marginTop: '10%', 
+    }} />
                 </View>
                 <View style={{ marginTop: 20 }}>
                     <TextInput
@@ -66,14 +80,16 @@ export default class login extends Component {
                     }]}>
                     REGISTRATI
                       </ReactNative.Text>
+                      <AntDesign name="arrowright" size={40}  color="white" style={{margin:'5%'}} />
 
-            </View>
+            </Container>
         )
     }
 }
 
 const styles = StyleSheet.create({
     container: {
+        marginTop:StatusBar.currentHeight,
         flex: 1,
         height: '100%',
         width: '100%',
