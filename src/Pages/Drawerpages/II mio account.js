@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactNative, { Text, View, StyleSheet, Image, TextInput, StatusBar, TouchableOpacity } from 'react-native'
 import { Container, Header, Left, Right, Thumbnail } from 'native-base'
-import { MaterialCommunityIcons, MaterialIcons,FontAwesome5 } from '@expo/vector-icons';
+import { MaterialCommunityIcons, MaterialIcons, FontAwesome5 } from '@expo/vector-icons';
 import * as Font from 'expo-font'
 
 
@@ -110,43 +110,43 @@ export default class mioAccount extends Component {
                             fontFamily: 'Bold',
                             color: 'rgb(148, 148, 148)'
                         }}>
-                       28/05/2020
+                        28/05/2020
                     </ReactNative.Text>
-                    <View style={{width:'100%',flexDirection:'row'}}>
+                    <View style={{ width: '100%', flexDirection: 'row' }}>
 
-<View style={{width:'75%'}}>
+                        <View style={{ width: '75%' }}>
 
-                    <ReactNative.Text
-                        style={{
-                            fontSize: 15,
-                            fontFamily: 'Regular',
-                            color: 'rgb(148, 148, 148)'
-                        }}>
-                     Studio N^1:
+                            <ReactNative.Text
+                                style={{
+                                    fontSize: 15,
+                                    fontFamily: 'Regular',
+                                    color: 'rgb(148, 148, 148)'
+                                }}>
+                                Studio N^1:
                     </ReactNative.Text>
-                    <ReactNative.Text
-                        style={{
-                            fontSize: 15,
-                            fontFamily: 'Bold',
-                            color: 'rgb(148, 148, 148)'
-                        }}>
-                        Lorem Ipsum
+                            <ReactNative.Text
+                                style={{
+                                    fontSize: 15,
+                                    fontFamily: 'Bold',
+                                    color: 'rgb(148, 148, 148)'
+                                }}>
+                                Lorem Ipsum
                     </ReactNative.Text>
                         </View>
-                        <View style={{width:'25%',justifyContent:"center",alignItems:"center"}}>
-                        <FontAwesome5 name="plus" size={24} color="rgb(0, 160, 153)" />
+                        <View style={{ width: '25%', justifyContent: "center", alignItems: "center" }}>
+                            <FontAwesome5 name="plus" size={24} color="rgb(0, 160, 153)" />
                         </View>
                     </View>
-<View style={{width:"100%",marginTop:20,flexDirection:'row'}}>
-<View style={{width:'65%'}}>
-<ReactNative.Text style={{fontSize:15,fontFamily:'Bold',color:'rgb(148, 148, 148)'}}>
-    SKILL 1 - SKILL 2 - SKILL 3
+                    <View style={{ width: "100%", marginTop: 20, flexDirection: 'row' }}>
+                        <View style={{ width: '65%' }}>
+                            <ReactNative.Text style={{ fontSize: 15, fontFamily: 'Bold', color: 'rgb(148, 148, 148)' }}>
+                                SKILL 1 - SKILL 2 - SKILL 3
 </ReactNative.Text>
-</View>
-<View style={{width:'35%'}}>
-<MaterialCommunityIcons name="pencil-circle" size={24} color="rgb(0, 160, 153)" />
-</View>
-</View>
+                        </View>
+                        <View style={{ width: '35%' }}>
+                            <MaterialCommunityIcons name="pencil-circle" size={24} color="rgb(0, 160, 153)" />
+                        </View>
+                    </View>
                 </View>
             </Container>
         )

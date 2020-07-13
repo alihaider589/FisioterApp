@@ -8,6 +8,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 export default class login extends Component {
     async componentDidMount() {
+
         await Font.loadAsync({
 
             Bold: require('../shared/fonts/Baloo2-Bold.ttf'),
@@ -29,7 +30,7 @@ export default class login extends Component {
                     style={{ height: 125,
                     width: 125,
                     tintColor:'white',
-                      marginTop: '10%', 
+                      marginTop: 10, 
     }} />
                 </View>
                 <View style={{ marginTop: 20 }}>
@@ -38,7 +39,7 @@ export default class login extends Component {
                         placeholder="     Email"
                     />
                     <TextInput
-                        style={[styles.textinputstyle, { marginTop: "15%" }]}
+                        style={[styles.textinputstyle, { marginTop: 30 }]}
                         placeholder="     Passworld"
                     />
 
@@ -48,7 +49,7 @@ export default class login extends Component {
                     style={[styles.font,
                     {
                         fontFamily: 'SemiBold',
-                        marginTop: '10%',
+                        marginTop: 20,
                         fontSize: 20,
                     }]}>
                     Passworld dimeticata?
@@ -58,7 +59,7 @@ export default class login extends Component {
                     {
                         fontFamily: 'ExtraBold',
                         fontSize: 30,
-                        marginTop: '10%'
+                        marginTop: 30
                     }]}>
                     ENTRA
                           </ReactNative.Text>

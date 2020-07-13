@@ -8,20 +8,24 @@ import Social from './src/Pages/Drawerpages/Social e contatti'
 import  Feedback from './src/Pages/Drawerpages/Feedback'
 import Pagamenti from './src/Pages/Drawerpages/pagamenti'
 import MioAccount from './src/Pages/Drawerpages/II mio account'
+import DrawerModal from './src/Pages/Drawerpages/DrawerModal'
+import Register1 from './src/Pages/Register/Register1'
 
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <Login /> */}
+      <Login />
       {/* <Invita /> */}
       {/* <Register /> */}
       {/* <Coupen /> */}
       {/* <Social /> */}
       {/* <Feedback /> */}
       {/* <Pagamenti /> */}
-      <MioAccount />
+      {/* <MioAccount /> */}
+      {/* <DrawerModal /> */}
+      {/* <Register1 /> */}
     </View>
 
   );
